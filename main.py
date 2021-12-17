@@ -19,7 +19,7 @@ def add_digits(number):
     sum_digits = 0
     # Initialise a count variable to 0.
     i = 0
-    
+
     for i in range(len(number)-1, -1, -1):
         if i % 2 == 0:
             sum_digits += int(number[i])
@@ -45,14 +45,14 @@ def reversed_number(card_number):
 # ---------------------------------- Program ----------------------------------
 def main():
     # Input to credit card number (as a string).
-    card_number = '79927398713'
-    
+    card_number = input('Please enter card number: ')
+
     # Add digits up and moduo 10.
-    print(f'{repr(card_number)} is', end= ' ')
+    print(f'repr{card_number} is', end= ' ')
     if check_moduo_10(add_digits((reversed_number(card_number)))):
-        print('a valid card number.')
+        print('valid')
     else:
-        print('an invalid card number.')
+        print('invalid')
 
 
 # --------------------------- Call the Main Function --------------------------
