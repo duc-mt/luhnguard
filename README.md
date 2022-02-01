@@ -10,7 +10,8 @@ Most cards use an algorithm invented by Hans Peter Luhn, a scientist who worked
 for IBM. According to Luhn's algorithm, this program will validate if a credit
 card number is valid.
 
-# Detailed Description
+# Detailed Description (adopted from
+[CS50](https://cs50.harvard.edu/x/2022/psets/1/credit/))
 A credit (or debit) card, of course, is a plastic card with which you can pay
 for goods and services. Printed on that card is a number that is also stored in
 a database somewhere, so that when your card is used to buy something, the
@@ -36,4 +37,3 @@ rigorous checks.
 
 # More Information
 [Wikipedia](http://en.wikipedia.org/wiki/Luhn_algorithm)
-[Credit](https://docs.cs50.ne/psets/1/credit/credit.html)
