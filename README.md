@@ -1,4 +1,4 @@
-# What the project does ?
+# This project aims to ...
 Use Hans Peter Luhn's algorithm to validate a credit card number in Python.
 
 # Introduction
@@ -11,10 +11,8 @@ for IBM. According to Luhn's algorithm, this program will validate if a credit
 card number is valid.
 
 # Luhn’s Algorithm
-
 According to Luhn’s algorithm, you can determine if a credit card number is
 (syntactically) valid as follows:
-
 ```
 1. Get a credit card number (as a string).
 2. Double every second digit going right ot left.
