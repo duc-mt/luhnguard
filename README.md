@@ -1,14 +1,3 @@
----
-title:
-- Credit Card Validator
-author:
-- Tan Duc Mai
-theme:
-- Copenhagen
-date:
-- December 17th, 2021
----
-
 # This project aims to ...
 Use Hans Peter Luhn's algorithm to validate a credit card number in Python.
 
