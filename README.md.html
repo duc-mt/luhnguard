@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Tan Duc Mai" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Credit Card Validator</h1>
+  <p class="author">
+Tan Duc Mai
+  </p>
+  <p class="date">December 17th, 2021</p>
+</div>
+<div id="this-project-aims-to" class="slide section level1">
+<h1>This project aims to …</h1>
+<p>Use Hans Peter Luhn’s algorithm to validate a credit card number in Python.</p>
+</div>
+<div id="introduction" class="slide section level1">
+<h1>Introduction</h1>
+<p>Chances are you have a credit card in your wallet or purse. Credit card numbers have a ‘checksum’ built into them, a mathematical relationship between at least one number and the others. The checksum enables a computer to detect typos, if not fraudulent numbers, without having to query a database (which can be slow). Most cards use an algorithm invented by Hans Peter Luhn, a scientist who worked for IBM. According to Luhn’s algorithm, this program will validate if a credit card number is valid.</p>
+</div>
+<div id="luhns-algorithm" class="slide section level1">
+<h1>Luhn’s Algorithm</h1>
+<p>According to Luhn’s algorithm, you can determine if a credit card number is (syntactically) valid as follows:</p>
+<pre><code>1. Get a credit card number (as a string).
+2. Double every second digit going right ot left.
+3. If greater than zero:
+4.   Sum the digits.
+5. Add doubled digits with the ubdoubled digits.
+6. If the total modulo 10 is equal to 0:
+7.   The number is valid.
+8. Else:
+9.   The number is invalid.</code></pre>
+</div>
+<div id="more-information" class="slide section level1">
+<h1>More Information</h1>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Luhn_algorithm">Wikipedia</a></li>
+<li><a href="https://cs50.harvard.edu/x/2022/psets/1/credit/">CS50</a></li>
+</ul>
+</div>
+</body>
+</html>
