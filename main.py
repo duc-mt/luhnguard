@@ -36,7 +36,7 @@ def add_digits(number):
         if index % 2 == 0:
             sum_digits += int(digit)
         else:
-            # Double every second digit going right to left.
+            # Double every second digit going from left to right.
             # If greater than 10, sum the digits.
             doubled_digits = int(digit) * 2
             for each_digit in str(doubled_digits):
