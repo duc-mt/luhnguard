@@ -28,3 +28,10 @@ According to Luhn’s algorithm, you can determine if a credit card number is
 # More Information
 * [Wikipedia](http://en.wikipedia.org/wiki/Luhn_algorithm)
 * [CS50](https://cs50.harvard.edu/x/2022/psets/1/credit/)
+
+# Sample Output
+```bash
+$ python3 main.py
+Please enter card number: 79927398713
+'79927398713' is valid
+```
