@@ -1,3 +1,14 @@
+---
+title:
+- Credit Card Validator
+author:
+- Tan Duc Mai
+theme:
+- Copenhagen
+date:
+- December 17th, 2021
+---
+
 # This project aims to ...
 Use Hans Peter Luhn's algorithm to validate a credit card number in Python.
 
@@ -14,15 +25,17 @@ card number is valid.
 According to Luhn’s algorithm, you can determine if a credit card number is
 (syntactically) valid as follows:
 ```
-1. Get a credit card number (as a string).
-2. Double every second digit going right ot left.
-3. If greater than zero:
-4.   Sum the digits.
-5. Add doubled digits with the ubdoubled digits.
-6. If the total modulo 10 is equal to 0:
-7.   The number is valid.
-8. Else:
-9.   The number is invalid.
+prompt for a credit card number (string type)
+reverse the number
+FOR each digit in number
+    double every second digit starting from left
+    IF product > 9
+        THEN sum each digit of product
+    add doubled digits with the undoubled digits
+IF the total modulo (%) 10 equates to 0
+  THEN output 'valid'
+ELSE
+  THEN output 'invalid'
 ```
 
 # More Information
@@ -34,4 +47,10 @@ According to Luhn’s algorithm, you can determine if a credit card number is
 $ python3 main.py
 Please enter card number: 79927398713
 '79927398713' is valid
+```
+
+```bash
+$ python3 main.py
+Please enter card number: 27282902627
+'27282902627' is invalid
 ```
