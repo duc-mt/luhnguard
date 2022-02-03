@@ -28,8 +28,8 @@ ELSE
 ```
 
 # Further Research
-* [Wikipedia](http://en.wikipedia.org/wiki/Luhn_algorithm)
-* [CS50](https://cs50.harvard.edu/x/2022/psets/1/credit/)
+* *[Wikipedia](http://en.wikipedia.org/wiki/Luhn_algorithm)*
+* *[CS50](https://cs50.harvard.edu/x/2022/psets/1/credit/)*
 
 # Sample Output
 ```bash
