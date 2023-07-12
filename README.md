@@ -1,7 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+# Table of Contents
+
+- [Aim](#aim)
+- [Introduction](#introduction)
+- [Algorithm](#algorithm)
+- [Further Research](#further-research)
+- [Sample Output](#sample-output)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Aim
+
 Use Hans Peter Luhn's algorithm to validate a credit card number in Python.
 
 # Introduction
+
 Chances are you have a credit card in your wallet or purse. Credit card numbers
 have a 'checksum' built into them, a mathematical relationship between at least
 one number and the others. The checksum enables a computer to detect typos, if
@@ -11,8 +25,10 @@ for IBM. According to Luhn's algorithm, this program will validate if a credit
 card number is valid.
 
 # Algorithm
+
 According to Luhn’s algorithm, you can determine if a credit card number is
 (syntactically) valid as follows:
+
 ```
 prompt for a credit card number (string type)
 reverse the number
@@ -28,10 +44,12 @@ ELSE
 ```
 
 # Further Research
-* *[Wikipedia](http://en.wikipedia.org/wiki/Luhn_algorithm)*
-* *[CS50](https://cs50.harvard.edu/x/2022/psets/1/credit/)*
+
+- *[Wikipedia](http://en.wikipedia.org/wiki/Luhn_algorithm)*
+- *[CS50](https://cs50.harvard.edu/x/2022/psets/1/credit/)*
 
 # Sample Output
+
 ```bash
 $ python3 main.py
 Please enter card number: 79927398713
