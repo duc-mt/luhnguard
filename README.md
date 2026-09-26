@@ -1,5 +1,9 @@
 # luhnguard
 
+[![CI](https://github.com/username/luhnguard/actions/workflows/ci.yml/badge.svg)](https://github.com/username/luhnguard/actions/workflows/ci.yml)
+[![Python Versions](https://img.shields.io/pypi/pyversions/luhnguard)](https://pypi.org/project/luhnguard/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 # Table of Contents
