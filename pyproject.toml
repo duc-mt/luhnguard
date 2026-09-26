@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "luhnguard"
 version = "0.1.0"
@@ -5,6 +9,33 @@ description = "Use Hans Peter Luhn's algorithm to validate credit card number"
 authors = [
     { name = "Tan Duc Mai", email = "tan.duc.work@gmail.com" }
 ]
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = [
     "icontract"
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "mypy",
+    "pre-commit"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "N"]
+ignore = []
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+
+[project.scripts]
+luhnguard = "luhnguard.main:main"

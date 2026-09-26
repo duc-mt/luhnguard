@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
 # =============================================================================
 #
@@ -20,9 +19,9 @@ import icontract
 # ---------------------------- Function Definitions ---------------------------
 @icontract.require(lambda total: isinstance(total, int))
 @icontract.ensure(lambda result: isinstance(result, bool))
-def check_moduo_10(total):
+def check_moduo_10(total: int) -> bool:
     """
-    Check if total moduo 10 is equal to 10.
+    Check if total moduo 10 is equal to 0.
     Return True if if it is; False otherwise.
     """
     # IF the total modulo 10 is equal to 0: number is valid.
@@ -35,7 +34,7 @@ def check_moduo_10(total):
 
 @icontract.require(lambda number: number.isnumeric())
 @icontract.ensure(lambda result: isinstance(result, int))
-def add_digits(number):
+def add_digits(number: str) -> int:
     """Return the sum of doubled digits with the undoubled digits."""
     # Initialise an accumulator to 0.
     sum_digits = 0
@@ -56,7 +55,7 @@ def add_digits(number):
 
 @icontract.require(lambda card_number: isinstance(card_number, str))
 @icontract.ensure(lambda result: isinstance(result, str))
-def reversed_number(card_number):
+def reversed_number(card_number: str) -> str:
     """From the card number, reverse it so it goes from right to left."""
     new_number = ''
 
@@ -66,21 +65,26 @@ def reversed_number(card_number):
     return new_number
 
 
+def validate_card(card_number: str) -> bool:
+    """Validate a credit card number using Luhn's algorithm."""
+    return check_moduo_10(add_digits(reversed_number(card_number)))
+
+
 # ---------------------------------- Program ----------------------------------
-def main():
+def main() -> None:
     # Input to credit card number (as a string).
     card_number = input('Please enter card number: ')
 
     # Add digits up and moduo 10, display the result.
     print(f'{repr(card_number)} is', end=' ')
-    if check_moduo_10(add_digits((reversed_number(card_number)))):
+    if validate_card(card_number):
         print('valid')
     else:
         print('invalid')
 
 
 # --------------------------- Call the Main Function --------------------------
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     try:
         main()
     except icontract.errors.ViolationError as e:
