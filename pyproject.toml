@@ -1,0 +1,10 @@
+[project]
+name = "luhnguard"
+version = "0.1.0"
+description = "Use Hans Peter Luhn's algorithm to validate credit card number"
+authors = [
+    { name = "Tan Duc Mai", email = "tan.duc.work@gmail.com" }
+]
+dependencies = [
+    "icontract"
+]
