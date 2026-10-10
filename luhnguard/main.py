@@ -57,7 +57,7 @@ def add_digits(number: str) -> int:
 @icontract.ensure(lambda result: isinstance(result, str))
 def reversed_number(card_number: str) -> str:
     """From the card number, reverse it so it goes from right to left."""
-    new_number = ''
+    new_number = ""
 
     for digit in range(len(card_number) - 1, -1, -1):
         new_number += card_number[digit]
@@ -73,18 +73,18 @@ def validate_card(card_number: str) -> bool:
 # ---------------------------------- Program ----------------------------------
 def main() -> None:
     # Input to credit card number (as a string).
-    card_number = input('Please enter card number: ')
+    card_number = input("Please enter card number: ")
 
     # Add digits up and moduo 10, display the result.
-    print(f'{repr(card_number)} is', end=' ')
+    print(f"{repr(card_number)} is", end=" ")
     if validate_card(card_number):
-        print('valid')
+        print("valid")
     else:
-        print('invalid')
+        print("invalid")
 
 
 # --------------------------- Call the Main Function --------------------------
-if __name__ == '__main__':  # pragma: no cover
+if __name__ == "__main__":  # pragma: no cover
     try:
         main()
     except icontract.errors.ViolationError as e:
