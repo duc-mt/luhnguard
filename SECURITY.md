@@ -6,6 +6,6 @@ Currently, only the latest version of Luhnguard is supported with security updat
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within this project, please send an e-mail to Tan Duc Mai at [tan.duc.work@gmail.com](mailto:tan.duc.work@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this project, please send an e-mail to Tan Mai Tan Duc at [tan.duc.work@gmail.com](mailto:tan.duc.work@gmail.com). All security vulnerabilities will be promptly addressed.
 
 Please do not report security vulnerabilities through public GitHub issues.

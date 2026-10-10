@@ -3,7 +3,7 @@
 # =============================================================================
 #
 #        FILE:  main.py
-#      AUTHOR:  Tan Duc Mai
+#      AUTHOR:  Tan Mai Tan Duc
 #       EMAIL:  tan.duc.work@gmail.com
 #        DATE:  17-Dec-2021
 # DESCRIPTION:  Use Hans Peter Luhn's algorithm to validate credit card number

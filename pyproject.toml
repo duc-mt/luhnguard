@@ -7,7 +7,7 @@ name = "luhnguard"
 version = "0.1.0"
 description = "Use Hans Peter Luhn's algorithm to validate credit card number"
 authors = [
-    { name = "Tan Duc Mai", email = "tan.duc.work@gmail.com" }
+    { name = "Tan Mai Tan Duc", email = "tan.duc.work@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.9"
